@@ -2,9 +2,9 @@
 
 Ralf Bernert
 
-Website: http://www.bernertmedia.com
-Twitter: [@ralfbernert](http://twitter.com/ralfbernert)
-E-Mail: ralfbernert@gmx.de 
+Website: http://www.bernertmedia.com  
+Twitter: [@ralfbernert](http://twitter.com/ralfbernert)  
+E-Mail: ralfbernert@gmx.de
 
 
 ## What is it?
