@@ -22,7 +22,7 @@
 
 #pragma mark - public methods
 
-- (void)startMonitoringForRegion:(CLBeaconRegion*)region
+- (void)startRangingBeaconsForRegion:(CLBeaconRegion*)region
 {
     if (!self.beaconLocationManager) {
         self.beaconLocationManager = [[CLLocationManager alloc] init];
@@ -34,10 +34,10 @@
 }
 
 
-- (void)stopMonitoringForRegion:(CLBeaconRegion*)region
+- (void)stopRangingBeaconsForRegion:(CLBeaconRegion*)region
 {
     
-    [self.beaconLocationManager startMonitoringForRegion:region];
+    [self.beaconLocationManager stopRangingBeaconsInRegion:region];
     
 }
 
@@ -49,7 +49,7 @@
     
     if ([beacons count] > 0) {
 
-        NSLog(@"############\nBeacon in region: %@", beacons);
+        NSLog(@"\nBeacon in region: %@", beacons);
         
         NSArray *immediateBeacons = [beacons filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"proximity = %i", CLProximityImmediate]];
         if (immediateBeacons) {

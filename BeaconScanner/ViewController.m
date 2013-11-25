@@ -32,7 +32,7 @@
 
     self.beaconLocationManager = [[BeaconLocationManager alloc] init];
     
-    [self.beaconLocationManager startMonitoringForRegion:[BeaconRegion targetRegion]];
+    [self.beaconLocationManager startRangingBeaconsForRegion:[BeaconRegion targetRegion]];
     self.beaconLocationManager.delegate = self;
     
 }

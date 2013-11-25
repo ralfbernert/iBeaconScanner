@@ -23,7 +23,7 @@
 
 @property (strong, nonatomic) id<BeaconLocationManagerProtocol> delegate;
 
-- (void)startMonitoringForRegion:(CLBeaconRegion*)region;
-- (void)stopMonitoringForRegion:(CLBeaconRegion*)region;
+- (void)startRangingBeaconsForRegion:(CLBeaconRegion*)region;
+- (void)stopRangingBeaconsForRegion:(CLBeaconRegion*)region;
 
 @end
