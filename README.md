@@ -24,12 +24,15 @@ Core of the scanner is the class `BeaconLocationManager` that is scanning for iB
 
 The implementation is based on CoreLocation's `CLLocationManager`.
 
-The UUID or the identifier can be changed in the `BeaconRegion` class, a sub-class of `CLBeaconRegion` implemented as singleton:
+Make sure that the scanner and the iBeacons are using the same UUID. The UUID or the identifier can be changed in the `BeaconRegion` class, a sub-class of `CLBeaconRegion` implemented as singleton:
 
 ```obj-c
 static NSString *kBeaconUUID = @"09a8845d-e3d5-48d5-8544-87216d1155d0";
 static NSString *kBeaconIdentifier = @"com.bernertmedia.beaconscanner";
 ```
+
+Currently only one region specified by a UUID is supported. 
+
 
 ## iBeacon Scanner
 Please see another iBeacon project, the [iBeaconSender](https://github.com/ralfbernert/iBeaconSender) for turning any iOS device into an iBeacon sender.
